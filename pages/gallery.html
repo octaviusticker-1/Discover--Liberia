@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Discover Liberia</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="container header-container">
+
+            <a href="../index.html" class="logo">
+                <span>DL</span>
+                Discover Liberia
+            </a>
+
+            <nav class="main-nav">
+
+                <a href="../index.html">Home</a>
+
+                <a href="destinations.html">
+                    Destinations
+                </a>
+
+                <a href="gallery.html" class="active">
+                    Gallery
+                </a>
+
+                <a href="travel-tips.html">
+                    Travel Tips
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= GALLERY HERO ================= -->
+
+    <main>
+
+        <section class="gallery-hero">
+
+            <div class="container">
+
+                <span class="section-label">
+                    Discover Liberia
+                </span>
+
+                <h1>
+                    Liberia Through<br>
+                    Our Lens
+                </h1>
+
+                <p>
+                    Explore the beauty, culture, landscapes,
+                    beaches, and history of Liberia.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FILTERS ================= -->
+
+        <section class="gallery-section">
+
+            <div class="container">
+
+                <div class="gallery-header">
+
+                    <div>
+                        <span class="section-label">
+                            Explore
+                        </span>
+
+                        <h2>
+                            Our Gallery
+                        </h2>
+                    </div>
+
+                    <p>
+                        Discover some of Liberia's most
+                        beautiful places and experiences.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-filters">
+
+                    <button
+                        class="gallery-filter active"
+                        data-filter="all">
+                        All
+                    </button>
+
+                    <button
+                        class="gallery-filter"
+                        data-filter="beaches">
+                        Beaches
+                    </button>
+
+                    <button
+                        class="gallery-filter"
+                        data-filter="culture">
+                        Culture
+                    </button>
+
+                    <button
+                        class="gallery-filter"
+                        data-filter="destinations">
+                        Destinations
+                    </button>
+
+                    <button
+                        class="gallery-filter"
+                        data-filter="historical">
+                        Historical
+                    </button>
+
+                    <button
+                        class="gallery-filter"
+                        data-filter="mountains">
+                        Mountains
+                    </button>
+
+                </div>
+
+
+                <!-- ================= GALLERY GRID ================= -->
+
+                <div class="gallery-grid">
+
+
+                 <!-- Monrovia -->
+<article class="gallery-item" data-category="destinations">
+    <img
+        src="../Assets/image/destinations/monrovia.jpg"
+        alt="Monrovia, Liberia">
+
+    <div class="gallery-overlay">
+        <span>Destination</span>
+        <h3>Monrovia</h3>
+    </div>
+</article>
+
+
+<!-- Robertsport -->
+<article class="gallery-item" data-category="beaches">
+    <img
+        src="../Assets/image/destinations/robertsport.jpg"
+        alt="Robertsport, Liberia">
+
+    <div class="gallery-overlay">
+        <span>Beach</span>
+        <h3>Robertsport</h3>
+    </div>
+</article>
+
+
+<!-- Buchanan -->
+<article class="gallery-item" data-category="beaches">
+    <img
+        src="../Assets/image/destinations/buchanan.jpg"
+        alt="Buchanan, Liberia">
+
+    <div class="gallery-overlay">
+        <span>Beach</span>
+        <h3>Buchanan</h3>
+    </div>
+</article>
+
+
+<!-- Mount Nimba -->
+<article class="gallery-item" data-category="mountains">
+    <img
+        src="../Assets/image/destinations/mount-nimba.jpg"
+        alt="Mount Nimba, Liberia">
+
+    <div class="gallery-overlay">
+        <span>Mountain</span>
+        <h3>Mount Nimba</h3>
+    </div>
+</article>
+
+
+<!-- Gbarnga -->
+<article class="gallery-item" data-category="destinations">
+    <img
+        src="../Assets/image/destinations/gbarnga.jpg"
+        alt="Gbarnga, Liberia">
+
+    <div class="gallery-overlay">
+        <span>Destination</span>
+        <h3>Gbarnga</h3>
+    </div>
+</article>
+
+
+<!-- Providence Island -->
+<article class="gallery-item" data-category="historical">
+    <img
+        src="../Assets/image/destinations/providence  island.jpg"
+        alt="Providence Island, Liberia">
+
+    <div class="gallery-overlay">
+        <span>Historical</span>
+        <h3>Providence Island</h3>
+    </div>
+</article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= LIGHTBOX ================= -->
+
+   <div
+    class="gallery-lightbox"
+    id="galleryLightbox"
+    aria-hidden="true">
+
+    <button
+        class="lightbox-close"
+        id="lightboxClose"
+        aria-label="Close image">
+        &times;
+    </button>
+
+    <button
+        class="lightbox-prev"
+        id="lightboxPrev"
+        aria-label="Previous image">
+        &#10094;
+    </button>
+
+    <img
+        id="lightboxImage"
+        src=""
+        alt="">
+
+    <button
+        class="lightbox-next"
+        id="lightboxNext"
+        aria-label="Next image">
+        &#10095;
+    </button>
+
+    <p id="lightboxCaption"></p>
+
+</div>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    Discover Liberia.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Made with ❤️ in Liberia
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/gallery.js"></script>
+
+</body>
+
+</html>
